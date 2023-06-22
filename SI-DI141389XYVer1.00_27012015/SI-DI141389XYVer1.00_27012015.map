@@ -1,0 +1,1348 @@
+MPLINK 4.02, Linker
+Linker Map File - Created Thu Jun 22 14:24:14 2023
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+      InterruptVectorHigh       code   0x000008    program   0x000006
+                   .cinit    romdata   0x00002a    program   0x00000e
+                     PROG       code   0x000038    program   0x000502
+          .code_Network.o       code   0x00053a    program   0x00048c
+        .code_adis16209.o       code   0x0009c6    program   0x0003dc
+             .code_Main.o       code   0x000da2    program   0x000240
+               _cinit_scn       code   0x000fe2    program   0x00009e
+         .code_spi_gets.o       code   0x001080    program   0x000046
+         .code_spi_writ.o       code   0x0010c6    program   0x00003c
+             D10KTCYXCODE       code   0x001102    program   0x00002e
+         .code_spi_read.o       code   0x001130    program   0x00002e
+         .code_fxd1616u.o       code   0x00115e    program   0x00002c
+                    .code       code   0x00118a    program   0x000020
+             _startup_scn       code   0x0011aa    program   0x00001c
+              D10TCYXCODE       code   0x0011c6    program   0x000016
+           .code___init.o       code   0x0011dc    program   0x000002
+         .idata_c018i.o_i    romdata   0x0011de    program   0x000000
+         .romdata_c018i.o    romdata   0x0011de    program   0x000000
+      .romdata_spi_read.o    romdata   0x0011de    program   0x000000
+      .idata_spi_read.o_i    romdata   0x0011de    program   0x000000
+      .romdata_spi_gets.o    romdata   0x0011de    program   0x000000
+      .idata_spi_gets.o_i    romdata   0x0011de    program   0x000000
+        .romdata___init.o    romdata   0x0011de    program   0x000000
+        .idata___init.o_i    romdata   0x0011de    program   0x000000
+     .idata_adis16209.o_i    romdata   0x0011de    program   0x000000
+      .romdata_spi_writ.o    romdata   0x0011de    program   0x000000
+      .idata_spi_writ.o_i    romdata   0x0011de    program   0x000000
+     .romdata_adis16209.o    romdata   0x0011de    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x0011de    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x0011de    program   0x000000
+          .idata_Main.o_i    romdata   0x0011de    program   0x000089
+          .romdata_Main.o    romdata   0x0011de    program   0x000000
+       .idata_Network.o_i    romdata   0x0011de    program   0x000000
+       .romdata_Network.o    romdata   0x0011de    program   0x000000
+            .code_c018i.o       code   0x001268    program   0x000000
+                MATH_DATA      udata   0x000000       data   0x000014
+                 .tmpdata      udata   0x000014       data   0x000010
+                DELAYDAT2      udata   0x000024       data   0x000001
+                DELAYDAT1      udata   0x000025       data   0x000001
+                     gpr4      udata   0x000100       data   0x0000f7
+        .idata_spi_read.o      idata   0x0001f7       data   0x000000
+        .udata_spi_read.o      udata   0x0001f7       data   0x000000
+        .idata_spi_gets.o      idata   0x0001f7       data   0x000000
+        .udata_spi_gets.o      udata   0x0001f7       data   0x000000
+          .idata___init.o      idata   0x0001f7       data   0x000000
+          .udata___init.o      udata   0x0001f7       data   0x000000
+        .idata_spi_writ.o      idata   0x0001f7       data   0x000000
+        .udata_spi_writ.o      udata   0x0001f7       data   0x000000
+        .idata_fxd1616u.o      idata   0x0001f7       data   0x000000
+        .udata_fxd1616u.o      udata   0x0001f7       data   0x000000
+           .idata_c018i.o      idata   0x0001f7       data   0x000000
+         .idata_Network.o      idata   0x0001f7       data   0x000000
+       .idata_adis16209.o      idata   0x0001f7       data   0x000000
+       .udata_adis16209.o      udata   0x0001f7       data   0x000000
+            .udata_Main.o      udata   0x000200       data   0x0000ec
+           .udata_c018i.o      udata   0x0002ec       data   0x00000a
+            .idata_Main.o      idata   0x000300       data   0x000089
+         .udata_Network.o      udata   0x000389       data   0x000020
+                   .stack      udata   0x000500       data   0x000100
+            SFR_UNBANKED0      udata   0x000f80       data   0x000015
+            SFR_UNBANKED1      udata   0x000f9d       data   0x000063
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000d      
+                            0x00002a    0x001266      
+            4681 out of 33048 program addresses used, program memory utilization is 14%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+            Adis16209Read   0x000a14    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+    ConfigFiltroAdis16209   0x000c5a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   D10K_1   0x00110e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00111a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00110c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x0011d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0011ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+             Delay10KTCYx   0x001102    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x0011c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                 FLO1632S   0x00003c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632U   0x000038    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO3232S   0x000066    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                 FLO3232U   0x000062    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                    FPA32   0x00009a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x0001c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x00026c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    FPS32   0x000098    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXD1616U   0x00115e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXM1616U   0x000346    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+        HDByteRead_FILTRO   0x000c0a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+         HDByteRead_FONTE   0x0009d8    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+    HDByteRead_INCLINACAO   0x0009ea    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+  HDByteRead_INCLINACAO_X   0x000aea    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+  HDByteRead_INCLINACAO_Y   0x000b4a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+          HDByteRead_TEMP   0x0009c6    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+       HDByteWrite_FILTRO   0x000c20    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  INT3208   0x000382    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  INT3216   0x0003d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  InitPIC   0x000c3a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+     InterruptHandlerHigh   0x000e8a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+      InterruptVectorHigh   0x000008    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  ReadSPI   0x001130    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\SPI\spi_read.c
+                 WriteSPI   0x0010c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\SPI\spi_writ.c
+       _D10KTCYXCODE_0010   0x001112    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00111e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x0011d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0011d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0011d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                 __FpExit   0x00043a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x000466    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+            __FpReturnNaN   0x00042e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x000440    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x000458    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x000446    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x000460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x00043c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x000454    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x0004be    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x0004de    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x00050e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+         ___else_lbl00006   0x000e32    program     static                          
+         ___else_lbl00008   0x000e48    program     static                          
+         ___else_lbl00015   0x000eae    program     static                          
+         ___else_lbl00020   0x000f20    program     static                          
+         ___else_lbl00023   0x000f24    program     static                          
+         ___else_lbl00025   0x000f44    program     static                          
+         ___else_lbl00028   0x000eee    program     static                          
+           ___if_lbl00003   0x000e06    program     static                          
+           ___if_lbl00004   0x000e28    program     static                          
+           ___if_lbl00005   0x000e3a    program     static                          
+           ___if_lbl00007   0x000e4c    program     static                          
+           ___if_lbl00012   0x000ec6    program     static                          
+           ___if_lbl00013   0x000ed0    program     static                          
+           ___if_lbl00014   0x000ed0    program     static                          
+           ___if_lbl00016   0x000ed4    program     static                          
+           ___if_lbl00019   0x000f22    program     static                          
+           ___if_lbl00021   0x000f42    program     static                          
+           ___if_lbl00022   0x000f42    program     static                          
+           ___if_lbl00024   0x000f4c    program     static                          
+           ___if_lbl00026   0x000f4c    program     static                          
+           ___if_lbl00027   0x000f4c    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x001188    program     static                          
+       ___return_lbl00000   0x000e52    program     static                          
+       ___return_lbl00001   0x0011c4    program     static                          
+       ___return_lbl00002   0x00107e    program     static                          
+       ___return_lbl00010   0x00000c    program     static                          
+       ___return_lbl00011   0x000f4c    program     static                          
+        ___while_lbl00001   0x000dec    program     static                          
+        ___while_lbl00002   0x000e52    program     static                          
+                   __init   0x0011dc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                   __pa_0   0x00091e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_0   0x000c82    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_0   0x000f8c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   __pa_1   0x000930    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_1   0x000c9e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_1   0x000fb6    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  __pa_10   0x000d2c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_10   0x0009b0    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  __pa_11   0x000d48    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_11   0x0009ba    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  __pa_12   0x000d5e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_13   0x000d6e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_14   0x000d80    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_15   0x000d8e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_16   0x000d94    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_17   0x000d9a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_2   0x00093c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_2   0x000cb0    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_3   0x000cc2    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_3   0x00094a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_4   0x000cce    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_4   0x000958    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_5   0x000ce4    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_5   0x00096c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_6   0x000cf8    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_6   0x00097a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_7   0x00098c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_7   0x000d0a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_8   0x000d16    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_8   0x000998    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_9   0x0009a2    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_9   0x000d22    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+               __tmplbl_0   0x000ee0    program     static                          
+               __tmplbl_1   0x000eda    program     static                          
+               __tmplbl_2   0x000f16    program     static                          
+               __tmplbl_3   0x000f10    program     static                          
+            __zero_memory   0x00118a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                _do_cinit   0x000fe2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 _startup   0x0011aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                  calcCRC   0x0006c4    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                compare_l   0x0011a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+           converte_ascii   0x000f58    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                copy_loop   0x001054    program     static                          
+            copy_one_byte   0x00105a    program     static                          
+                     done   0x00107e    program     static                          
+             done_copying   0x001068    program     static                          
+                  endloop   0x001184    program     static                          
+                  getsSPI   0x001080    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\SPI\spi_gets.c
+                initPorts   0x000e6a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                init_tmr2   0x00077c    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                 jANotInf   0x0001e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0000c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x00028a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotNeg   0x000156    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jANotZero   0x0001f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jAandWsetup   0x000126    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x000114    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x0000b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x0000d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jBothFinite   0x000298    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x0002a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+            jDifOrPosSign   0x0000e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jExit   0x00042c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x0003ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+               jFinalSign   0x0001be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jHaveZero   0x0002a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jI2F16Beg   0x00004c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                jI2F32Beg   0x00007e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                    jLoop   0x00040c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x0003b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                    jLoop   0x000220    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jLoopExit   0x00041c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x0003c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                     jMax   0x000392    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                     jMax   0x0003e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x00039c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  jMaxNeg   0x0003ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0003e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x000396    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                    jNext   0x000246    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x000244    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+             jNotBothZero   0x0000e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jNotInf   0x0003a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  jNotInf   0x0003fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jPkLoop   0x000474    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x0004be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x0004a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x000490    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x00044a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jShiftDone   0x00017e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x000170    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x0001ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jSignedZero   0x0001ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                  jUnpkA1   0x0004e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x000500    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x0004f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x000518    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x000530    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x000526    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x00050a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jWNotNeg   0x00016a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jZero   0x0003f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x0003a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+               jZero1and2   0x00044e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                     loop   0x001168    program     static                          
+                     loop   0x0011ba    program     static                          
+                   loop_h   0x001198    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   loop_l   0x0011a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     main   0x000da2    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              networkInit   0x00053a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  sendMsg   0x0007b4    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                     test   0x000ffc    program     static                          
+               transmitir   0x000810    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+               zero_block   0x001198    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  Cal_PHi   0x00033b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 Cal_PLow   0x000339       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ContDelay   0x000382       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ContReset   0x000384       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ContTest1   0x000388       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+            DelayCounter1   0x000025       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                FlagReset   0x000386       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               Inclinacao   0x00024f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              InclinacaoX   0x000251       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              InclinacaoY   0x000253       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+          LeituraComSinal   0x00030f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               Medida_Fil   0x0002cc       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              Medida_long   0x0002d0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               Polaridade   0x0002e6       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+         SignedIntLeitura   0x000209       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    Sinal   0x0002e7       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   SinalX   0x00037f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   SinalY   0x000380       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TCODE   0x000206       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    TECLA   0x000356       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     TENT   0x000208       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU1   0x00020b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU10   0x000214       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU11   0x000215       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU12   0x000216       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU13   0x000217       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU14   0x000218       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU15   0x000219       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU16   0x00021a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU17   0x00021b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU18   0x00021c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU19   0x00021d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU2   0x00020c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU20   0x00021e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU21   0x00021f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU22   0x000220       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU23   0x000221       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU24   0x000222       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU25   0x000223       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU26   0x000224       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU27   0x000225       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU28   0x000226       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU29   0x000227       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU3   0x00020d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU30   0x000228       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU31   0x000229       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU32   0x00022a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU33   0x00022b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU34   0x00022c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU35   0x00022d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU36   0x00022e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU37   0x00022f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU38   0x000230       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU39   0x000231       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU4   0x00020e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU40   0x000232       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU41   0x000233       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU42   0x000234       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU43   0x000235       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU44   0x000236       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU45   0x000237       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU46   0x000238       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU47   0x000239       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU48   0x00023a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU49   0x00023b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU5   0x00020f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU50   0x00023c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU51   0x00023d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU52   0x00023e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU53   0x00023f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU54   0x000240       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU55   0x000241       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU56   0x000242       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU57   0x000243       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU58   0x000244       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU59   0x000245       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU6   0x000210       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU60   0x000246       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU61   0x000247       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU62   0x000248       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU7   0x000211       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU8   0x000212       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU9   0x000213       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TSAIR   0x000207       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              Temperatura   0x000381       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 VarChar1   0x0002e8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 VarChar2   0x0002e9       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           VarSignedChar1   0x0002ea       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           VarSignedChar2   0x0002eb       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_0   0x000014       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  __tmp_0   0x000014       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __tmp_0   0x000014       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               a0_entrada   0x000326       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                       a1   0x0002b8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               a1_entrada   0x000328       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     addr   0x0003a8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+               adj_preset   0x000309       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        adj_preset_buffer   0x000313       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        analogica_entrada   0x000379       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            atualiza_disp   0x0002d7       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                      aux   0x000389       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                       b1   0x0002b4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                baud_rate   0x0003a4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                    bauds   0x00033d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+   buffer_senha_nova_var1   0x00035e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+   buffer_senha_nova_var2   0x000362       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                byteCount   0x0003a0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  centena   0x0002e4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_a0   0x00032e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_a1   0x000330       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_e0   0x00032a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_e1   0x00032c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_a0   0x0002a9       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_a1   0x0002ab       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_e0   0x0002a5       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_e1   0x0002a7       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ciclos   0x0002d4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                cont_disp   0x0002d6       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                cont_erro   0x00033f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 cont_int   0x000340       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               cont_sinal   0x00037b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                cont_test   0x000375       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+       cont_time_out_menu   0x000366       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           cont_universal   0x000335       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           controle_senha   0x000354       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                curr_byte   0x0002ef       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0002f1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     data   0x0002b3       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 data_ptr   0x0002f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   dezena   0x0002e3       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               e0_entrada   0x000322       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               e1_entrada   0x000324       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              end_inicial   0x000342       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    entra   0x0002c2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                        f   0x0002ae       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   filtro   0x00030d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_atualiza   0x000355       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                flag_erro   0x000341       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               flag_menos   0x000317       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_muda_end   0x000344       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+         flag_mudou_radio   0x000372       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             flag_ocupado   0x000371       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_segundos   0x00034e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               flag_start   0x00033e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               flag_tempo   0x00036d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_time_out   0x00034f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              flag_xtempo   0x000352       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                flag_zera   0x00036a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    fonte   0x000305       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     hist   0x000265       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                      inc   0x000201       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               inclinacao   0x000307       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+         inclinacao_sinal   0x000318       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               incremento   0x000200       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 ini_link   0x00036c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               int1_rs232   0x00036b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                       io   0x000369       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              leitura_ana   0x000332       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        leitura_com_sinal   0x000311       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        leitura_sem_sinal   0x000301       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim10_inf   0x000287       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim10_sup   0x000289       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim11_inf   0x00028b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim11_sup   0x00028d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim12_inf   0x00028f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim12_sup   0x000291       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim1_inf   0x000261       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim1_sup   0x000263       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim2_inf   0x000267       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim2_sup   0x000269       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim3_inf   0x00026b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim3_sup   0x00026d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim4_inf   0x00026f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim4_sup   0x000271       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim5_inf   0x000273       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim5_sup   0x000275       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim6_inf   0x000277       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim6_sup   0x000279       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim7_inf   0x00027b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim7_sup   0x00027d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim8_inf   0x00027f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim8_sup   0x000281       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim9_inf   0x000283       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim9_sup   0x000285       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    local   0x000368       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                main_menu   0x000100       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                media_ana   0x0002da       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               media_cont   0x0002d8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 menu_aux   0x0001f0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   milhar   0x0002e5       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     modo   0x000205       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               mostra_var   0x000365       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 msgReady   0x0003a2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                 msgTimer   0x00039e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  msgsize   0x0003a1       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   netBuf   0x00038a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   oplim1   0x000255       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  oplim10   0x00025e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  oplim11   0x00025f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  oplim12   0x000260       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim2   0x000256       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim3   0x000257       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim4   0x000258       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim5   0x000259       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim6   0x00025a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim7   0x00025b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim8   0x00025c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim9   0x00025d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            placa_externa   0x000293       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            placa_interna   0x000294       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              porcentagem   0x00031e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch1   0x000295       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch2   0x000299       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch3   0x00029d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch4   0x0002a1       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        porcentagem_float   0x0002de       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  posicao   0x000373       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 position   0x0002b2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            presao_result   0x000347       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   preset   0x00030b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             preset_sinal   0x00031a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             primeiro_end   0x000343       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     prom   0x0002ec       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                      ptr   0x0002c0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ptrglobal   0x0001ee       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rampa   0x00031c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rcAux   0x0002c8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rcFil   0x0002c4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     rele   0x000249       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rele1   0x00024b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            senha_aux_var   0x00035a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          senha_nova_var1   0x00035c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          senha_nova_var2   0x000360       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                senha_var   0x000358       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  sentido   0x000334       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           sentido_buffer   0x0002ad       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            sinal_posicao   0x000300       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    tecla   0x000364       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              temperatura   0x000303       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  teste_1   0x000315       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   testex   0x000345       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  unidade   0x0002e2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    valor   0x0002b0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              valor_float   0x0002bc       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               valor_lido   0x0002d2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   valorx   0x00024d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 var_long   0x000349       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             var_segundos   0x00034d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           var_sinal_test   0x00037d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                var_tempo   0x00036f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 var_test   0x000377       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               var_xtempo   0x000350       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               velocidade   0x000346       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+      InterruptVectorHigh   0x000008    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+       ___return_lbl00010   0x00000c    program     static                          
+                 FLO1632U   0x000038    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632S   0x00003c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                jI2F16Beg   0x00004c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO3232U   0x000062    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                 FLO3232S   0x000066    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                jI2F32Beg   0x00007e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast32FP.asm
+                    FPS32   0x000098    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPA32   0x00009a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x0000b8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x0000c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x0000d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x0000e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+             jNotBothZero   0x0000e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x000114    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x000126    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x000156    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jWNotNeg   0x00016a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x000170    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftDone   0x00017e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x0001ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jFinalSign   0x0001be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x0001c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0001e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jSignedZero   0x0001ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jANotZero   0x0001f8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jLoop   0x000220    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x000244    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jNext   0x000246    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x00026c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x00028a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+              jBothFinite   0x000298    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jHaveZero   0x0002a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x0002a4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 FXM1616U   0x000346    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+                  INT3208   0x000382    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                     jMax   0x000392    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  jMaxPos   0x000396    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  jMaxNeg   0x00039c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                    jZero   0x0003a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  jNotInf   0x0003a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                    jLoop   0x0003b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                jLoopExit   0x0003c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                    jExit   0x0003ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP08.asm
+                  INT3216   0x0003d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x0003e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0003e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0003ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x0003f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x0003fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x00040c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x00041c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x00042c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+            __FpReturnNaN   0x00042e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpExit   0x00043a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x00043c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x000440    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x000446    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x00044a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jZero1and2   0x00044e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x000454    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x000458    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x000460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x000466    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jPkLoop   0x000474    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x000490    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x0004a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x0004be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x0004be    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x0004de    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA1   0x0004e8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x0004f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x000500    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x00050a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x00050e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x000518    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x000526    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x000530    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              networkInit   0x00053a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  calcCRC   0x0006c4    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                init_tmr2   0x00077c    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  sendMsg   0x0007b4    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+               transmitir   0x000810    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_0   0x00091e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_1   0x000930    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_2   0x00093c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_3   0x00094a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_4   0x000958    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_5   0x00096c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_6   0x00097a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_7   0x00098c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_8   0x000998    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   __pa_9   0x0009a2    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  __pa_10   0x0009b0    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  __pa_11   0x0009ba    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+          HDByteRead_TEMP   0x0009c6    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+         HDByteRead_FONTE   0x0009d8    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+    HDByteRead_INCLINACAO   0x0009ea    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+            Adis16209Read   0x000a14    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+  HDByteRead_INCLINACAO_X   0x000aea    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+  HDByteRead_INCLINACAO_Y   0x000b4a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+        HDByteRead_FILTRO   0x000c0a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+       HDByteWrite_FILTRO   0x000c20    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  InitPIC   0x000c3a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+    ConfigFiltroAdis16209   0x000c5a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_0   0x000c82    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_1   0x000c9e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_2   0x000cb0    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_3   0x000cc2    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_4   0x000cce    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_5   0x000ce4    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_6   0x000cf8    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_7   0x000d0a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_8   0x000d16    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                   __pa_9   0x000d22    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_10   0x000d2c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_11   0x000d48    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_12   0x000d5e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_13   0x000d6e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_14   0x000d80    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_15   0x000d8e    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_16   0x000d94    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __pa_17   0x000d9a    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                     main   0x000da2    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        ___while_lbl00001   0x000dec    program     static                          
+           ___if_lbl00003   0x000e06    program     static                          
+           ___if_lbl00004   0x000e28    program     static                          
+         ___else_lbl00006   0x000e32    program     static                          
+           ___if_lbl00005   0x000e3a    program     static                          
+         ___else_lbl00008   0x000e48    program     static                          
+           ___if_lbl00007   0x000e4c    program     static                          
+        ___while_lbl00002   0x000e52    program     static                          
+       ___return_lbl00000   0x000e52    program     static                          
+                initPorts   0x000e6a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+     InterruptHandlerHigh   0x000e8a    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+         ___else_lbl00015   0x000eae    program     static                          
+           ___if_lbl00012   0x000ec6    program     static                          
+           ___if_lbl00013   0x000ed0    program     static                          
+           ___if_lbl00014   0x000ed0    program     static                          
+           ___if_lbl00016   0x000ed4    program     static                          
+               __tmplbl_1   0x000eda    program     static                          
+               __tmplbl_0   0x000ee0    program     static                          
+         ___else_lbl00028   0x000eee    program     static                          
+               __tmplbl_3   0x000f10    program     static                          
+               __tmplbl_2   0x000f16    program     static                          
+         ___else_lbl00020   0x000f20    program     static                          
+           ___if_lbl00019   0x000f22    program     static                          
+         ___else_lbl00023   0x000f24    program     static                          
+           ___if_lbl00021   0x000f42    program     static                          
+           ___if_lbl00022   0x000f42    program     static                          
+         ___else_lbl00025   0x000f44    program     static                          
+           ___if_lbl00024   0x000f4c    program     static                          
+           ___if_lbl00026   0x000f4c    program     static                          
+           ___if_lbl00027   0x000f4c    program     static                          
+       ___return_lbl00011   0x000f4c    program     static                          
+           converte_ascii   0x000f58    program     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   __pa_0   0x000f8c    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   __pa_1   0x000fb6    program     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                _do_cinit   0x000fe2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x000ffc    program     static                          
+                copy_loop   0x001054    program     static                          
+            copy_one_byte   0x00105a    program     static                          
+             done_copying   0x001068    program     static                          
+                     done   0x00107e    program     static                          
+       ___return_lbl00002   0x00107e    program     static                          
+                  getsSPI   0x001080    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\SPI\spi_gets.c
+                 WriteSPI   0x0010c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\SPI\spi_writ.c
+             Delay10KTCYx   0x001102    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00110c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x00110e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x001112    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00111a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x00111e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                  ReadSPI   0x001130    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\SPI\spi_read.c
+                 FXD1616U   0x00115e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x001168    program     static                          
+                  endloop   0x001184    program     static                          
+       ___return_lbl00000   0x001188    program     static                          
+            __zero_memory   0x00118a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               zero_block   0x001198    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   loop_h   0x001198    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                compare_l   0x0011a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   loop_l   0x0011a2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 _startup   0x0011aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x0011ba    program     static                          
+       ___return_lbl00001   0x0011c4    program     static                          
+              Delay10TCYx   0x0011c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x0011ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x0011d0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x0011d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x0011d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x0011d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   __init   0x0011dc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_0   0x000014       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\adis16209.c
+                  __tmp_0   0x000014       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  __tmp_0   0x000014       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            DelayCounter2   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000025       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+                main_menu   0x000100       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ptrglobal   0x0001ee       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 menu_aux   0x0001f0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               incremento   0x000200       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                      inc   0x000201       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     modo   0x000205       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    TCODE   0x000206       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    TSAIR   0x000207       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     TENT   0x000208       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+         SignedIntLeitura   0x000209       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU1   0x00020b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU2   0x00020c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU3   0x00020d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU4   0x00020e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU5   0x00020f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU6   0x000210       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU7   0x000211       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU8   0x000212       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   TMENU9   0x000213       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU10   0x000214       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU11   0x000215       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU12   0x000216       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU13   0x000217       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU14   0x000218       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU15   0x000219       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU16   0x00021a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU17   0x00021b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU18   0x00021c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU19   0x00021d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU20   0x00021e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU21   0x00021f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU22   0x000220       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU23   0x000221       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU24   0x000222       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU25   0x000223       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU26   0x000224       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU27   0x000225       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU28   0x000226       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU29   0x000227       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU30   0x000228       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU31   0x000229       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU32   0x00022a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU33   0x00022b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU34   0x00022c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU35   0x00022d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU36   0x00022e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU37   0x00022f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU38   0x000230       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU39   0x000231       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU40   0x000232       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU41   0x000233       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU42   0x000234       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU43   0x000235       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU44   0x000236       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU45   0x000237       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU46   0x000238       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU47   0x000239       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU48   0x00023a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU49   0x00023b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU50   0x00023c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU51   0x00023d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU52   0x00023e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU53   0x00023f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU54   0x000240       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU55   0x000241       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU56   0x000242       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU57   0x000243       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU58   0x000244       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU59   0x000245       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU60   0x000246       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU61   0x000247       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  TMENU62   0x000248       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     rele   0x000249       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rele1   0x00024b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   valorx   0x00024d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               Inclinacao   0x00024f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              InclinacaoX   0x000251       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              InclinacaoY   0x000253       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim1   0x000255       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim2   0x000256       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim3   0x000257       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim4   0x000258       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim5   0x000259       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim6   0x00025a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim7   0x00025b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim8   0x00025c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   oplim9   0x00025d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  oplim10   0x00025e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  oplim11   0x00025f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  oplim12   0x000260       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim1_inf   0x000261       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim1_sup   0x000263       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     hist   0x000265       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim2_inf   0x000267       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim2_sup   0x000269       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim3_inf   0x00026b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim3_sup   0x00026d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim4_inf   0x00026f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim4_sup   0x000271       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim5_inf   0x000273       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim5_sup   0x000275       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim6_inf   0x000277       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim6_sup   0x000279       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim7_inf   0x00027b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim7_sup   0x00027d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim8_inf   0x00027f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim8_sup   0x000281       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim9_inf   0x000283       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 lim9_sup   0x000285       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim10_inf   0x000287       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim10_sup   0x000289       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim11_inf   0x00028b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim11_sup   0x00028d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim12_inf   0x00028f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                lim12_sup   0x000291       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            placa_externa   0x000293       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            placa_interna   0x000294       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch1   0x000295       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch2   0x000299       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch3   0x00029d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          porcentagem_ch4   0x0002a1       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_e0   0x0002a5       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_e1   0x0002a7       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_a0   0x0002a9       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch2_a1   0x0002ab       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           sentido_buffer   0x0002ad       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                        f   0x0002ae       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    valor   0x0002b0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 position   0x0002b2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     data   0x0002b3       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                       b1   0x0002b4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                       a1   0x0002b8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              valor_float   0x0002bc       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                      ptr   0x0002c0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    entra   0x0002c2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rcFil   0x0002c4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rcAux   0x0002c8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               Medida_Fil   0x0002cc       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              Medida_long   0x0002d0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               valor_lido   0x0002d2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ciclos   0x0002d4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                cont_disp   0x0002d6       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            atualiza_disp   0x0002d7       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               media_cont   0x0002d8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                media_ana   0x0002da       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        porcentagem_float   0x0002de       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  unidade   0x0002e2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   dezena   0x0002e3       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  centena   0x0002e4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   milhar   0x0002e5       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               Polaridade   0x0002e6       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    Sinal   0x0002e7       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 VarChar1   0x0002e8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 VarChar2   0x0002e9       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           VarSignedChar1   0x0002ea       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           VarSignedChar2   0x0002eb       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                     prom   0x0002ec       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0002ef       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0002f1       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0002f3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            sinal_posicao   0x000300       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        leitura_sem_sinal   0x000301       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              temperatura   0x000303       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    fonte   0x000305       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               inclinacao   0x000307       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               adj_preset   0x000309       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   preset   0x00030b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   filtro   0x00030d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          LeituraComSinal   0x00030f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        leitura_com_sinal   0x000311       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        adj_preset_buffer   0x000313       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  teste_1   0x000315       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               flag_menos   0x000317       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+         inclinacao_sinal   0x000318       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             preset_sinal   0x00031a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    rampa   0x00031c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              porcentagem   0x00031e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               e0_entrada   0x000322       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               e1_entrada   0x000324       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               a0_entrada   0x000326       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               a1_entrada   0x000328       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_e0   0x00032a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_e1   0x00032c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_a0   0x00032e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   ch1_a1   0x000330       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              leitura_ana   0x000332       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  sentido   0x000334       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           cont_universal   0x000335       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 Cal_PLow   0x000339       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  Cal_PHi   0x00033b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    bauds   0x00033d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               flag_start   0x00033e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                cont_erro   0x00033f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 cont_int   0x000340       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                flag_erro   0x000341       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              end_inicial   0x000342       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             primeiro_end   0x000343       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_muda_end   0x000344       data     static C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   testex   0x000345       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               velocidade   0x000346       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            presao_result   0x000347       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 var_long   0x000349       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             var_segundos   0x00034d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_segundos   0x00034e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_time_out   0x00034f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               var_xtempo   0x000350       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              flag_xtempo   0x000352       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           controle_senha   0x000354       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            flag_atualiza   0x000355       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    TECLA   0x000356       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                senha_var   0x000358       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+            senha_aux_var   0x00035a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          senha_nova_var1   0x00035c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+   buffer_senha_nova_var1   0x00035e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+          senha_nova_var2   0x000360       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+   buffer_senha_nova_var2   0x000362       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    tecla   0x000364       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               mostra_var   0x000365       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+       cont_time_out_menu   0x000366       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                    local   0x000368       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                       io   0x000369       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                flag_zera   0x00036a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               int1_rs232   0x00036b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 ini_link   0x00036c       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               flag_tempo   0x00036d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                var_tempo   0x00036f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+             flag_ocupado   0x000371       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+         flag_mudou_radio   0x000372       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                  posicao   0x000373       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                cont_test   0x000375       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                 var_test   0x000377       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+        analogica_entrada   0x000379       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+               cont_sinal   0x00037b       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+           var_sinal_test   0x00037d       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   SinalX   0x00037f       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                   SinalY   0x000380       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+              Temperatura   0x000381       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ContDelay   0x000382       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ContReset   0x000384       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                FlagReset   0x000386       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                ContTest1   0x000388       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Main.c
+                      aux   0x000389       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                   netBuf   0x00038a       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                 msgTimer   0x00039e       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                byteCount   0x0003a0       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                  msgsize   0x0003a1       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                 msgReady   0x0003a2       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                baud_rate   0x0003a4       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                     addr   0x0003a8       data     extern C:\Users\romeu\Desktop\Trabalho\SUI ANTIGO\SUI-DI141388XY Funcionando\SI-DI141389XYVer1.00_27012015\Network.c
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+              INTCON1bits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  INTCON1   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f252.asm
+
+

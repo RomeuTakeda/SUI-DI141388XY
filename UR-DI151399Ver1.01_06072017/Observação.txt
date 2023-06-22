@@ -1,0 +1,14 @@
+--------------------------------------------------
+
+Data da última compilação: 12:30h 12/03/2015
+IDE: MPLAB. V8.80
+Compilador: mcc18 da Microchip
+			Version 3.02
+--------------------------------------------------
+		      ATENÇÂO
+O Cristal está configurado como HS PLLx4
+--------------------------------------------------
+
+Atenção!! Usar o Linker que está na pasta
+
+Alteração do Boot e mensagem da versão no display para 1.01
